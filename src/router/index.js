@@ -148,6 +148,20 @@ export const constantRoutes = [
       }
     ]
   },
+   //自分で追加
+   {
+    path: '/testCharts',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'TestChart',
+        component: () => import('@/views/testChart/index'),
+        meta: { title: 'Chart', icon: 'dashboard' }
+      }
+    ]
+  },
+  //ここまで
 
   {
     path: 'external-link',
