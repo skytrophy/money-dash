@@ -24,7 +24,7 @@ import axios from 'axios'
  export default{
   data () {
     return {
-      users: nul
+      users: null
     }
   },
   mounted () {
